@@ -1,15 +1,14 @@
-import React, { useState } from "react";
 import Button from "@mui/material/Button";
+import Fade from "@mui/material/Fade";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import Fade from "@mui/material/Fade";
-
+import React, { FC, useState } from "react";
 type MenuProps = {
   buttonText: string;
   menuItems: string[];
 };
 
-export default ({ buttonText, menuItems }: MenuProps) => {
+const MenuCommon: FC<MenuProps> = ({ buttonText, menuItems }: MenuProps) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
@@ -52,3 +51,5 @@ export default ({ buttonText, menuItems }: MenuProps) => {
     </>
   );
 };
+
+export default MenuCommon;

@@ -1,5 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
-export default () => {
+import React from "react";
+
+const CenterBar: React.FC = () => {
   const style = {
     width: "100%",
     backgroundColor: "gray",
@@ -36,3 +38,4 @@ export default () => {
     </>
   );
 };
+export default CenterBar;

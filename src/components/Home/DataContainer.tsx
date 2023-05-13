@@ -1,14 +1,6 @@
 import OpenInFullIcon from "@mui/icons-material/OpenInFull";
-import {
-  Box,
-  Button,
-  Grid,
-  List,
-  ListItem,
-  ListItemText,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Grid, Stack, Typography } from "@mui/material";
+import { FC } from "react";
 import FieldList from "../Utils/Common/FieldList";
 const buttonStyle = {
   height: "40px",
@@ -18,7 +10,7 @@ const buttonStyle = {
   fontWeight: "bold",
   textTransform: "capitalize",
 };
-export default () => {
+const DataContainer: FC = () => {
   return (
     <>
       <Box
@@ -194,3 +186,5 @@ export default () => {
     </>
   );
 };
+
+export default DataContainer;

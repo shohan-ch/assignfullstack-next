@@ -3,10 +3,9 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import React, { FC } from "react";
 import SearchBar from "../Utils/Form/SearchBar";
-import React from "react";
-
-export default () => {
+const Header: FC = () => {
   const changeHandler = (e: React.ChangeEvent) => {
     console.log((e.target as HTMLInputElement).value);
   };
@@ -62,3 +61,4 @@ export default () => {
     </>
   );
 };
+export default Header;

@@ -1,13 +1,11 @@
 import React from "react";
 import { List, ListItem, ListItemText } from "@mui/material";
-
+import { FC } from "react";
 interface MyListProps {
   items: string[];
 }
 
-export default (props: MyListProps) => {
-  const { items } = props;
-
+const FieldList: FC<MyListProps> = ({ items }) => {
   return (
     <List>
       {items.map((item, index) => (
@@ -18,3 +16,4 @@ export default (props: MyListProps) => {
     </List>
   );
 };
+export default FieldList;

@@ -1,8 +1,7 @@
 import { Box, Stack } from "@mui/material";
-import React from "react";
+import { FC } from "react";
 import MenuCommon from "../Utils/Common/MenuCommon";
-
-export default () => {
+const TopMenus: FC = () => {
   return (
     <>
       <Box sx={{ width: "100%", backgroundColor: "gray", height: "40px" }}>
@@ -30,3 +29,4 @@ export default () => {
     </>
   );
 };
+export default TopMenus;

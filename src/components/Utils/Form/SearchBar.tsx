@@ -1,6 +1,6 @@
-import { alpha, styled } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
-import React from "react";
+import { alpha, styled } from "@mui/material/styles";
+import React, { FC } from "react";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -36,7 +36,7 @@ interface SearchBarProps {
   changeHandler: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export default ({ changeHandler }: SearchBarProps) => {
+const SearchBar: FC<SearchBarProps> = ({ changeHandler }) => {
   return (
     <>
       <Search>
@@ -49,3 +49,4 @@ export default ({ changeHandler }: SearchBarProps) => {
     </>
   );
 };
+export default SearchBar;

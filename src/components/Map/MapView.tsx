@@ -3,8 +3,8 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import { useEffect, useState } from "react";
 import Map, { Layer, Source } from "react-map-gl";
 import { MAPBOX_ACCESS_TOKEN } from "../../../config";
-
-export default () => {
+import { FC } from "react";
+const MapView: FC = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
     fetch(
@@ -46,3 +46,4 @@ export default () => {
     </>
   );
 };
+export default MapView;
